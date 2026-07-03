@@ -19,6 +19,6 @@ public class SelectionSortTest {
         SelectionSort selectionSort = new SelectionSort();
         int[] arr = {5, 2, 4, 6, 1, 3};
         selectionSort.sort(arr.clone());
-        assertEquals(5, selectionSort.getTrocas());
+        assertEquals(3, selectionSort.getTrocas());
     }
 }

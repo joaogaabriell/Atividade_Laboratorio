@@ -23,10 +23,12 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
-            trocas++;
+            if (minIndex != i) {
+                int temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
+                trocas++;
+            }
         }
 
         long endTime = System.nanoTime();
